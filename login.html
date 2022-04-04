@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+	<head>
+		<meta charset="utf-8">
+		
+		<title>botton_display</title>
+		
+		<style>
+		
+		*{margin:0;padding:0;
+		box-sizing:border-box;
+		font-family:'Noto Sans KR',sans-serif;}
+		
+		.inner{width:100%;
+		overflow:hidden;
+		height:100px;
+		background:#fff;
+		position:fixed; 
+		left:0px; 
+		top:0px;
+		padding:1%;}
+
+	
+	.llogo,
+	.head
+	{
+		width:50%;
+		float:left;
+		
+	}
+	
+	.head li{float:left;
+	font-size:20px;
+	list-style:none;
+	padding:1%;
+	margin-right:1%;}
+	
+	.head li a{text-decoration:none;
+	vertical-align:bottom;
+	color:#000;}
+	
+	.head li img{width:20px;}
+
+	
+	.head li:first-child{margin-left:30%;}
+
+	.llogo, .head{vertical-align:bottom;}
+		
+		body{background-color:#f73535;}
+			
+		.login{width:23%;
+		background:#fff;
+		margin:200px auto;
+		border-radius:5px;
+		padding:45px;}
+		
+		.text-field{font-size:16px;
+		border-radius:5px;
+		width:100%;
+		padding:20px;
+		border:1px solid red;
+		margin:3px auto;}
+		
+		.text-field:hover{border-color:#999;}
+		
+		.submit_btn{font-size:16px;
+		width:100%;
+		background:#f73535;
+		color:#fff;
+		border:none;
+		border-radius:5px;
+		cursor:pointer;
+		padding:5%;
+		margin:15px auto;}
+		
+		.links{text-align:center;}
+		
+		.links a{font-size:14px;
+		color:#9B9B9B;}
+		
+		.image img{width:100%;}
+		
+		.image{margin:5px auto;
+		width:45%;}
+	
+	
+		
+		</style>
+
+	</head>
+
+	<body>
+	<header class="list">	
+		<div class="inner">
+			<div class="llogo">
+				<h1><a href="index.html"><img src="img/koreanlogoo.png" alt="이미지"/></a></h1>
+			</div>
+			
+			<ul class="head">
+				<li><a href="#">오리온</a></li>
+				<li><a href="#">제품소개</a></li>
+				<li><a href="#">이벤트</a></li>
+				<li><a href="#">커뮤니티</a></li>
+				<li><a href="#">ALL</a></li>
+				<li><a href="#"><img src="img/per.png" alt="이미지"/></a></li>
+				<li><a href="#"><img src="img/pper.png" alt="이미지"></a></li>
+				<li><a href="#"><img src="img/ppper.png" alt="이미지"/></a></li>
+			</ul>
+		</div>
+	</header>
+	
+		<div class="login">
+			<form>
+			<div class="image">
+			<img src="img/logoo.png">
+			</div>
+				<input type="text" name="email" class="text-field" placeholder="아이디">
+				<input type="password" name="password" class="text-field" placeholder="비밀번호"
+				maxlength="8">
+				<input type="submit" value="로그인" class="submit_btn">
+			</form>
+			<div class="links">
+				<a href="#">비밀번호를 잃어버리셨나요?</a>
+			</div>
+		</div>
+	</body>
+
+</html>

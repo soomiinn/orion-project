@@ -1,0 +1,143 @@
+
+		nav{width:100%;
+		margin:0 auto;
+		position:relative;
+		background:green;}
+		
+		.banking{width:70%;
+		margin:0 auto;
+		overflow:hidden;
+		box-sizing:border-box;
+		background:gray;}
+		
+		nav .banking>li{width: calc(100% / 5);
+		float:left;
+		text-align:center;
+		height:60px;
+		border:3px solid pink;
+		box-sizing:border-box;}
+		
+		nav .banking>li >a {
+		display:block;
+		line-height:60px;
+		}
+		
+		.banking > li{display:block;
+		box-sizing:border-box;}
+		.banking>li:hover{
+		background:orange;
+		color:#fff	
+		}
+		.banking>li >a:hover{
+		text-decoration:underline;
+		}
+		
+		/********메인***********/
+		
+		/********서브***********/
+		.banking .sub1{margin:0 auto;
+		border:5px solid red;
+		background:gray;
+		position:absolute;
+		height:500px;
+		left:0;
+		top:60px;
+		width:100%;
+		display:none;
+		overflow:hidden;}
+		
+		.banking .sub1 > li{
+		width:70%;
+		border:3px solid #fff;
+		height:400px;
+		overflow:hidden;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
+		}
+		
+		.sub1 > li > ul{width:100%;
+		display:block;
+		float:left;
+		}
+		
+		.sub1 > li > ul>li{
+		width:16.666%;
+		float:left;
+		line-height:52px;
+		}
+		
+		.sub1 > li > ul > li > ul > li{
+		border:1px solid transparent;
+		}
+		.sub1 > li > ul > li > ul > li:hover{
+		border-color:red;
+		background:pink;}
+	
+		
+		.sub1 > li > ul > li > ul > li >a:hover{
+		text-decoration:underline;}
+		.sub1 > li > ul > li > ul > li >a{display:block;
+		line-height:32px;}
+		
+		
+		
+	
+		/* .sub1 > li > ul>li>ul>li{
+		float:left;
+		width:16.666%;} */
+	
+		
+		.banking li:hover .sub1{display:block;}
+		
+		.sublist{width:70%;
+		margin:0 auto;
+		overflow:hidden;
+		box-sizing:border-box;
+		background:skyblue;
+		display:none;
+		position:absolute;
+		top:60px;
+		left:15%;
+		}
+		
+		.sublist{border:1px solid red;
+		overflow:hidden;
+		padding-left:1%;
+		padding-top:1%;
+		padding-bottom:1%;}
+		
+		.sublist > li > ul {width:100%;
+		float:left;
+		border:1px solid red;}
+		
+		.sublist > li > ul >li {width:20%;
+		float:left;
+		border:1px solid red;}
+	
+		.sublist > li > ul > li >ul>li{width:100%;
+		float:left;}
+		
+		.sublist > li > ul > li > ul> li>a{display:block;
+		line-height:40px;
+		text-align:left;}
+	
+		
+		.mm a:hover{background:purple;
+		color:#fff;
+		line-height:52px;}
+		
+		.sublist > li > ul > li > ul > li >a:hover{line-height:40px;}
+		
+
+		
+	
+		
+	
+		
+		
+		
+		

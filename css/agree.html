@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--한글지원-->
+	<head>
+		<meta charset="utf-8">
+		<!--한글지원-->
+		<title>text area 응용</title>
+		<style>
+	*{margin:0;padding:0;
+	box-sizing:border-box;}	
+	
+	
+	}
+	
+	
+	
+
+	
+	
+	
+		</style>
+
+	</head>
+
+	<body>	
+	<form>
+	
+	<fieldset>
+	<legend>Today</legend>
+	<input type="datetime-local" id="day">
+	</fieldset>
+	
+	<fieldset>
+		<ul>
+			<li>
+				<label for="subject">인증선택</label>
+				<button type="submit"class="submit">휴대폰 본인인증
+				<button type="submit"class="submit">아이핀 인증
+			</li>
+			<li>	
+				<select>
+				<option value="010">010</option>
+				<option value="011">011</option>
+				<option value="016">016</option>
+				</select>
+				-<input type="tel" id="phone" name="phone" required/ >-<input type="tel" id="phone" name="phone"required/>
+			</li>
+				<div class="links">
+				<a href="#">※인증이 안되신다면?</a>
+				</div>
+			
+		</ul>
+	</fieldset>
+	
+	<fieldset id="register">
+				<label for="name">이름</label>
+				<input type="text" autofocus required placeholder="이름을 입력해 주세요.">
+	</fieldset>
+	<fieldset id="register">회원아이디</label>
+				<input type="text" autofocus required placeholder="회원아이디 입력">
+	</fieldset>
+	
+	<fieldset id="register">
+		<legend>수강 과목을 선택하세요</legend>
+		<ul>
+			<li>
+				<label><span class="regs">선호색상</span></label>
+				<input type="color" id="color">
+			</li>
+			
+			<li>
+				<label><span class="regs">신청 과목<small>(회화)</small></span></label>
+				
+				<input type="checkbox" name="level1" value="초급" checked>영어회화(초급)
+				
+				<input type="checkbox" name="level2" value="중급">영어회화(중급)
+				
+				<input type="checkbox" name="level3" value="고급">영어회화(고급)
+				
+			</li>
+			<li>
+				<label><span class="regs">신청 과목<small>(자격)</small></span></label>
+				
+				<input type="radio" name="select" value="toeic"> toeic
+				<input type="radio" name="select" value="toefl"> toefl
+				<input type="radio" name="select" value="topic"> topic
+			</li>
+			<li>
+				<label><span class="regs">관심분야</span>
+				</label>
+				<input type="text"id="interest" list="engChoices">
+				
+				<datalist id="engChoices"><!--목록형태로 제시해줌 input와 같이 씀 input 태그의 list속성값과 데이타목록의 id값 같게 만들어줌 value값을 보여줌-->
+				
+				<!--사이에 option태그 설정해줌-->
+				<option value="grammar" label="문법"></option>
+				<option value="voca" label="어휘"></option>
+				<option value="speaking" label="회화"></option>
+				<option value="listening" label="리스닝"></option>
+				<option value="news" label="뉴스청취"></option>
+				
+				</datalist>
+			</li>
+			<li>
+				<label><span class="regs">신청 과목<small>(회화)</small></span></label>
+				
+				<input type="checkbox" name="level1" value="초급" checked>영어회화(초급)
+			
+				<input type="checkbox" name="level2" value="초급">영어회화(중급)
+				
+				<input type="checkbox" name="level3" value="초급">영어회화(고급)
+			</li>
+		</ul>
+	</fieldset>
+	
+	<fieldset id="register">
+		<legend>강의 시간을 선택하세요</legend>
+		<ul>
+			<li>
+				<label for="week">개강 주</label>
+				<input type="week" id="week">
+				
+			</li>
+			<li>
+				<label for="day">개강 일</label>
+				<input type="date" id="day">
+				
+			</li>
+			<li>
+				<label for="time">강의 시간</label>
+				<input type="time" id="time">
+				
+				
+			</li>
+		</ul>
+	</fieldset>
+	
+	<fieldset id="register">
+		<legend>관심분야는?<small>(다수 선택 가능)</small></legend>
+		<ul>
+			<li>
+				
+				<input type="checkbox" name="grammar" value="문법">문법
+				<input type="checkbox" name="voca" value="어휘"checked>어휘
+				<input type="checkbox" name="speaking" value="회화" checked>회화
+				<input type="checkbox" name="listening" value="리스닝" checked>리스닝
+				<input type="checkbox" name="news" value="뉴스청취">뉴스청취
+				<input type="checkbox" name="reading" value="독해" checked>독해
+			</li>
+		</ul>
+	</fieldset>
+	
+	<fieldset id="register">
+		<legend>교재 주문</legend>
+		 <ul>
+			<li>
+			<label><span class="regs">교재</span></label>
+			<input type="number" id="교재" value="1" min="1" max="10" step="1">
+			 </li>
+			 <li>
+			 <label><span class="regs">워크시트</span></label>
+			 <input type="number" id="교재" value="1" min="1" max="3" step="1">
+			</li>
+			<li>
+			<label><span class="regs">단체주문</span></label>
+			<input type="number" id="단체"
+			  value="10" min="10" max="100" step="10">
+			</li>
+		</ul>
+	</fieldset>	
+	<fieldset>
+		<div class="button_inner">
+		<button type="submit" class="submit">전송하기</button>
+		<button type="reset" class="reset">다시쓰기</button></div>
+	</fieldset>
+	
+	</form>
+	</body>
+
+</html>
